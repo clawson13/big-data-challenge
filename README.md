@@ -3,10 +3,10 @@
 Prepared by Corey Lawson-Enos
 
 ## Overview
-Google Colab Notebooks and SQL code that completes ETL processes for Amazon review datasets in the cloud, and uploads them as DataFrames to an RDS instance for analysis. Question: Are reviews from reviewers in Amazon's Vine program trustworthy? Disparate datasets selected for testing are Jewelry and Toys.
+Google Colab Notebooks and SQL code for Amazon review datasets. Completes ETL processes in the cloud, and uploads the reviews as DataFrames to an RDS instance for analysis. Question: Are reviews from reviewers in Amazon's Vine program trustworthy? The two, disparate product datasets selected for testing are Jewelry and Toys.
 
 ## Technologies
-Amazon Web Services: RDS and S3; pgAdmin; SQL; PySpark; Google Colab Notebook
+Amazon Web Services, RDS and S3; pgAdmin; SQL; PySpark; Google Colab Notebook
 
 ## Resources
 Amazon Review Data Sources (file download):
@@ -14,7 +14,7 @@ Amazon Review Data Sources (file download):
    - Toys: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Toys_v1_00.tsv.gz
 
 ## Summary
-Jewelry and Toys review datasets were cleaned and combined using PySpark, and uploaded to an Amazon Web Services RDS instance for aggregation in SQL. Reviews are grouped according to particicpation in Amazon's Vine program, where reviewers receive free products in exchange for reviews. Summary tables as follows, used to evaluate if bias and/or discrepancy can be shown when comparing Vine participants against the general public. 
+Jewelry and Toys review datasets were cleaned and combined using PySpark, and uploaded to an Amazon Web Services RDS instance for aggregation in SQL. Reviews are grouped according to particicpation in Amazon's Vine program, where reviewers receive free products in exchange for reviews. Summary tables are as follows, used to evaluate if bias and/or discrepancy can be shown when comparing reviews from Vine participants against the general public. 
 
 ### Aggregate Summary
 * Average ratings appear consistent between Vine participants/non-participants.
@@ -39,6 +39,8 @@ Although average ratings remain roughly consistent between Vine members and non-
 
 * A) That the general public is much more polar with their reviews--either very critical or very positive--and that Vine members are more thoughtful and provide more balanced, nuanced ratings; or
 * B) That Vine members are much less inclined to provide negative reviews, suggesting that repeat negative reviews might present apparent risk to program participation and its benefits.
+
+Since Vine member reviews receive significantly more helpful votes, we draw tenative conclusion that the first hypothesis seems more likely, and that Vine members might be less polarized because of their program participation. It could very well be argued that your average person will only take time to provide positive or negative review if they have a very good or very bad experience, hence the polarization. A deeper dive into data sampling reviews from the most popular products is recommended, to further determine if possible bias may exist as determined by Vine membership.
 
 ## Source
 
