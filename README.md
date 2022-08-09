@@ -38,11 +38,11 @@ Jewelry and Toys review datasets were cleaned and combined using PySpark, and up
 Although average ratings remain roughly consistent between Vine members and non-members, it is observed that Vine members are much less likely to award 5-stars the non-members. To achieve comparable ratings averages, the stars they award must cluster more closely to the 4.12 and adjusted 3.91 averages observed. Since 63% of the general public's reviews in these datasets are 5-star, a signicant number of their balance must be lower 1- and 2-star ratings to take their averages down to approximate the same figures as Vine members. Two possible trends may be observed, both of which could work together in concert with each other to produce the observed effect:
 
 * A) That the general public is much more polar with their reviews--either very critical or very positive--and that Vine members are more thoughtful and provide more balanced, nuanced ratings; or
-* B) That Vine members are much less inclined to provide negative reviews, which might risk their program participation.
+* B) That Vine members are much less inclined to provide negative reviews, suggesting that repeat negative reviews might present apparent risk to program participation and its benefits.
 
 ## Source
 
-* Amazon customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: https://s3.amazonaws.com/amazon-reviews-pds/readme.html
+Amazon customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: https://s3.amazonaws.com/amazon-reviews-pds/readme.html
 
 ## Contact
 E-mail: clawson131@gmail.com<br>
