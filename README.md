@@ -9,7 +9,7 @@ Prepared by Corey Lawson-Enos
 Amazon Web Services: RDS and S3; pgAdmin; SQL; PySpark; Google Colab Notebook
 
 ## Resources
-* Amazon Review Data Sources:
+* Amazon Review Data Sources (file download):
     - Jewelry: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz
     - Toys: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Toys_v1_00.tsv.gz
 
@@ -17,25 +17,25 @@ Amazon Web Services: RDS and S3; pgAdmin; SQL; PySpark; Google Colab Notebook
 * Jewelry and Toys review datasets were cleaned and combined using PySpark, and uploaded to an Amazon Web Services RDS instance for aggregation in SQL. Reviews are grouped according to particicpation in Amazon's Vine program, where reviewers receive free products in exchange for reviews. Summary tables as follows, used to evaluate if bias and/or discrepancy can be shown when comparing Vine participants against the general public. 
 
 ### General Summary
-![General Summary](Images/review_summary.png)
 
 Observations:
 * Average ratings appear consistent between Vine participants/non-participants.
 * Vine member reviews garnered an average 2.6 helpful votes, compared to 1.3 for non-members.
+![General Summary](Images/review_summary.png)
 
 ### 5-Star Reviews Summary
-![5-Star Summary](Images/five_star_summary.png)
 
 Observations:
 * Only 41% of Vine program reviews are 5-star, compared to 63% for the general public.
+![5-Star Summary](Images/five_star_summary.png)
 
 ### Summary of Reviews' Helpful Votes
-![Helpful Votes Summary](Images/helpful_summary.png)
 
 Observations:
 * To reduce noise, records were filtered for a minimum ten (10) helpful votes.
 * Applying this fitler, average ratings were slightly higher for Vine participants, although the margin is slim.
 * At this reduced noise level, Vine member reviews garnered an average 36.6 helpful votes, compared to 28.6 for non-members.
+![Helpful Votes Summary](Images/helpful_summary.png)
 
 ## Analysis
 
