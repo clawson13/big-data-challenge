@@ -10,7 +10,6 @@ Amazon Web Services: RDS and S3; pgAdmin; SQL; PySpark; Google Colab Notebook
 
 ## Resources
 Amazon Review Data Sources (file download):
-
     - Jewelry: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz
     - Toys: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Toys_v1_00.tsv.gz
 
